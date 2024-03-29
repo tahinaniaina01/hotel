@@ -24,10 +24,6 @@ export const Hero = () => {
               </div>
               <div className="absolute bg-black/80 top-0 left-0 w-full h-full z-20 flex items-center justify-center flex-col">
                 <div className="container flex flex-col gap-y-5 items-center">
-                  <h1 className="text-secondary text-6xl font-bold mx-auto text-center">
-                    AN UPCOMING VACATION GIVES US SOMETHING TO EAGERLY
-                    ANTICIPATE.
-                  </h1>
                   <Button variant={"accent"} className="px-7 py-5 mt-7">
                     EXPLORE NOW
                   </Button>
