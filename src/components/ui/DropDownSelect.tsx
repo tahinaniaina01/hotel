@@ -25,7 +25,7 @@ export default function DropDownSelect({
           <SelectItem
             key={option}
             value={option}
-            className="font-bold text-xl text-muted-foreground hover:text-white"
+            className="font-bold text-xl text-muted-foreground"
           >
             {option}
           </SelectItem>
