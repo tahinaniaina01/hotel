@@ -14,7 +14,7 @@ export const Hero = () => {
       <Swiper
         className="h-[580px] lg:h-[720px] xl:h-[900px] bg-black/50"
         modules={[Autoplay]}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
       >
         {Slides.map((img, index) => {
           return (
@@ -24,7 +24,17 @@ export const Hero = () => {
               </div>
               <div className="absolute bg-black/80 top-0 left-0 w-full h-full z-20 flex items-center justify-center flex-col">
                 <div className="container flex flex-col gap-y-5 items-center">
-                  <Button variant={"accent"} className="px-7 py-5 mt-7">
+                  <h1 className="xl:text-5xl md:text-xl text-sm mt-20 md:mt-0 pb-5 border-b-2 border-secondary font-bold text-secondary text-center">
+                    Relax at the bedrooms with Comfy Couches
+                  </h1>
+                  <p className="text-secondary md:text-md lg:text-xl xl:text-2xl my-3 text-center">
+                    Everything for an active vacation and lucure experience
+                    lover.
+                  </p>
+                  <Button
+                    variant={"accent"}
+                    className="lg:px-7 lg:py-5 px-5 py-3 mt-7 "
+                  >
                     EXPLORE NOW
                   </Button>
                 </div>
