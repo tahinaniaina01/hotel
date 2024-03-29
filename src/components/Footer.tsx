@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-            <h2 className="text-xl title-font font-medium text-white tracking-widest text-sm mb-3">
+            <h2 className="text-xl title-font font-medium text-white tracking-widest mb-3">
               Quick Link
             </h2>
             <nav className="list-none mb-10">
@@ -35,7 +35,7 @@ export default function Footer() {
             </nav>
           </div>
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-            <h2 className="text-xl title-font font-medium text-white tracking-widest text-sm mb-3">
+            <h2 className="text-xl title-font font-medium text-white tracking-widest mb-3">
               Explore
             </h2>
             <nav className="list-none mb-10">
@@ -54,7 +54,7 @@ export default function Footer() {
             </nav>
           </div>
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-            <h2 className="text-xl title-font font-medium text-white tracking-widest text-sm mb-3">
+            <h2 className="text-xl title-font font-medium text-white tracking-widest mb-3">
               Contact
             </h2>
             <nav className="list-none mb-10">

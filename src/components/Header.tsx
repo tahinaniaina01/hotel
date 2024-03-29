@@ -38,7 +38,7 @@ export default function Headers() {
               Switzerland
             </p>
             <p className="text-white ml-3 flex items-center gap-x-2">
-              <FiPhoneCall className="text-accent" /> +41 31 377 77 77
+              <FiPhoneCall className="text-accent" /> +41 42 568 87 98
             </p>
           </div>
           <div className="flex items-center text-secondary gap-x-3">
