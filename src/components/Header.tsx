@@ -15,13 +15,13 @@ export default function Headers() {
 
   useEffect(() => {
     const hundleScroll = () => {
-      if (ref.current)
+      if (ref.current) {
         scrollY > ref.current?.offsetHeight
           ? setIsScroll(true)
           : setIsScroll(false);
+      }
     };
     window.addEventListener("scroll", hundleScroll);
-    // console.log(ref.current?.offsetHeight);
 
     return () => {
       window.removeEventListener("scroll", hundleScroll);
@@ -63,11 +63,9 @@ export default function Headers() {
             <img src={isScroll ? logoDark : logoWhite} alt="" />
           </div>
           <div
-            className={`fixed md:relative top-0 mt-[70px] md:mt-0 md:pt-3 transition-all duration-500 ${
+            className={`fixed md:relative top-0 md:mt-0 md:pt-3 transition-all duration-500 ${
               isOpen ? "right-0" : "-right-full"
-            } p-3 ${
-              isScroll ? "bg-secondary" : "bg-primary"
-            } md:right-0 md:bg-transparent z-40 md:z-50 flex flex-col items-center md:flex-row gap-y-2`}
+            } p-3 bg-primary md:right-0 md:bg-transparent z-40 md:z-50 flex flex-col items-center md:flex-row gap-y-2`}
           >
             <FaTimes
               className="md:hidden absolute top-4 left-2 text-xl text-secondary"
@@ -75,29 +73,29 @@ export default function Headers() {
             />
             <nav className="md:ml-auto flex flex-col md:flex-row items-center md:pr-5 text-base justify-center xl:text-xl">
               <a
-                className={`mr-1 hover:text-accent ${
-                  isScroll ? "text-primary" : "text-secondary"
+                className={`mr-1 hover:text-accent text-secondary ${
+                  isScroll ? "md:text-primary" : "md:text-secondary"
                 } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
               >
                 Home
               </a>
               <a
-                className={`mr-1 hover:text-accent ${
-                  isScroll ? "text-primary" : "text-secondary"
+                className={`mr-1 hover:text-accent text-secondary ${
+                  isScroll ? "md:text-primary" : "md:text-secondary"
                 } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
               >
                 Rooms
               </a>
               <a
-                className={`mr-1 hover:text-accent ${
-                  isScroll ? "text-primary" : "text-secondary"
+                className={`mr-1 hover:text-accent text-secondary ${
+                  isScroll ? "md:text-primary" : "md:text-secondary"
                 } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
               >
                 Events
               </a>
               <a
-                className={`mr-1 hover:text-accent ${
-                  isScroll ? "text-primary" : "text-secondary"
+                className={`mr-1 hover:text-accent text-secondary ${
+                  isScroll ? "md:text-primary" : "md:text-secondary"
                 } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
               >
                 Gallery
