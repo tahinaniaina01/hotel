@@ -6,6 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaTimes } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { Link } from "react-scroll";
 import { Button } from "./ui/button";
 
 export default function Headers() {
@@ -72,41 +73,50 @@ export default function Headers() {
               onClick={() => setIsOpen(false)}
             />
             <nav className="md:ml-auto flex flex-col md:flex-row items-center md:pr-5 text-base justify-center xl:text-xl">
-              <a
+              <Link
+                to="hero"
+                smooth={true}
+                duration={500}
+                offset={-100}
                 className={`mr-1 hover:text-accent text-secondary ${
                   isScroll ? "md:text-primary" : "md:text-secondary"
                 } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
+                to="abouts"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                className={`mr-1 hover:text-accent text-secondary ${
+                  isScroll ? "md:text-primary" : "md:text-secondary"
+                } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
+              >
+                Abouts
+              </Link>
+              <Link
+                to="rooms"
+                smooth={true}
+                duration={500}
+                offset={-100}
                 className={`mr-1 hover:text-accent text-secondary ${
                   isScroll ? "md:text-primary" : "md:text-secondary"
                 } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
               >
                 Rooms
-              </a>
-              <a
+              </Link>
+              <Link
+                to="events"
+                smooth={true}
+                duration={500}
+                offset={-100}
                 className={`mr-1 hover:text-accent text-secondary ${
                   isScroll ? "md:text-primary" : "md:text-secondary"
                 } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
               >
                 Events
-              </a>
-              <a
-                className={`mr-1 hover:text-accent text-secondary ${
-                  isScroll ? "md:text-primary" : "md:text-secondary"
-                } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
-              >
-                Gallery
-              </a>
-              <a
-                className={`mr-1 hover:text-accent ${
-                  isScroll ? "text-primary" : "text-secondary"
-                } cursor-pointer text-sm md:text-xl xl:text-2xl relative lg:px-3 px-2 py-2 hover:text-accent before:transition-all before:duration-500 before:content-[''] before:absolute before:left-0 before:top-[100%] before:w-0 hover:before:w-full before:h-1 before:bg-accent `}
-              >
-                Contact
-              </a>
+              </Link>
             </nav>
             <Button variant="accent" className="font-bold">
               Know more

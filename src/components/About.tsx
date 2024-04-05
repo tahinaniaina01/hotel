@@ -6,7 +6,7 @@ import room3 from "@/assets/images/room-3.png";
 
 function About() {
   return (
-    <section>
+    <section id="abouts">
       <div className="container my-5">
         <div className="w-full flex justify-center my-7">
           <img src={img} alt="" />

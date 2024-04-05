@@ -11,7 +11,7 @@ import { Button } from "./ui/button";
 export const Hero = () => {
   const Slides = [img1, img2, img3];
   return (
-    <section className="relative">
+    <section id="hero" className="relative">
       <Swiper
         className="h-[580px] lg:h-[720px] xl:h-[900px] bg-black/50"
         modules={[Autoplay]}

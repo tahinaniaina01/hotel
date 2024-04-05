@@ -6,7 +6,7 @@ export default function Rooms() {
   // console.log(roomData);
 
   return (
-    <section className="w-full flex flex-col items-center">
+    <section id="rooms" className="w-full flex flex-col items-center">
       <h1 className="text-4xl lg:text-6xl mt-5 lg:mt-7 text-accent">
         Rooms & Suites
       </h1>

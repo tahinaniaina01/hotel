@@ -5,7 +5,7 @@ import event3 from "@/assets/images/events-3.png";
 
 function Events() {
   return (
-    <section className="mb-16">
+    <section id="events" className="mb-16">
       <div className="container my-5">
         <div className="w-full flex flex-col items-center my-7">
           <h1 className="text-accent lg:text-6xl mb-3">Events</h1>
