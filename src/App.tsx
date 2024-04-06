@@ -1,15 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import RoomsDetails from "./pages/RoomsDetails";
-import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/hotel/",
     element: <Home />,
   },
   {
-    path: "/:room",
+    path: "/hotel/:room",
     element: <RoomsDetails />,
   },
 ]);
