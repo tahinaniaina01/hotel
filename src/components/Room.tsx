@@ -26,7 +26,7 @@ export default function Room({ room }: { room: roomProps }) {
         <img
           src={image}
           className="w-full group-hover:scale-125 object-cover"
-          alt=""
+          alt={name}
         />
       </div>
       <div className="w-full h-[50px] lg:h-[60px] relative flex justify-center">
