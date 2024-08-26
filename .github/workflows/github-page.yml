@@ -1,4 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages using pnpm
+# Simple workflow for deploying static content to GitHub Pages using npm
 name: Deploy static content to Pages
 
 on:
@@ -34,11 +34,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm" # Use pnpm cache
+          cache: "npm" # Use npm cache
       - name: Install dependencies
-        run: pnpm install # Use pnpm instead of npm
+        run: npm install # Use npm instead of npm
       - name: Build
-        run: pnpm run build # Use pnpm for build step
+        run: npm run build # Use npm for build step
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
